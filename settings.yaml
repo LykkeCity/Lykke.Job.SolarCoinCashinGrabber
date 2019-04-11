@@ -1,0 +1,23 @@
+SolarCoinCashinGrabberJob:
+  Db:
+    LogsConnString:
+      settings-key: SolarCoinCashinGrabberJob-LogsConnString
+      types:
+        - AzureTableStorage
+    MongoConnString:
+      settings-key: SolarCoinCashinGrabberJob-MongoConnString
+    AzureQueueConnString:
+      settings-key: SolarCoinCashinGrabberJob-AzureQueueConnString
+      types:
+        - AzureTableStorage
+SlackNotifications:
+    AzureQueue:
+        ConnectionString:
+            settings-key: SlackNotificationsConnString
+            types:
+                - AzureTableStorage
+        QueueName:
+            settings-key: SlackQueueName
+MonitoringServiceClient:
+    MonitoringServiceUrl:
+        settings-key: MonitoringServiceUrl
